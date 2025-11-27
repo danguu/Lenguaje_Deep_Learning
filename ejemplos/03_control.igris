@@ -1,0 +1,10 @@
+a => 1
+b => 0
+si (a > b) {
+  ver "a mayor que b"
+  b => b + 1
+}
+mientras (b < 3) {
+  ver "b =", b
+  b => b + 1
+}

@@ -1,0 +1,13 @@
+datos => cargar("altura_peso.csv")
+
+X => col(datos, 0)
+y => col(datos, 1)
+
+modelo => regresion(X, y)
+
+ver "Modelo: y =", modelo[0], "* x +", modelo[1]
+ver "Predicción 1.78m:", predecir(modelo, 1.78)
+
+puntos(X, y, "rojo")
+linea(modelo)
+graficar()

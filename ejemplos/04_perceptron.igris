@@ -1,0 +1,7 @@
+# Datos OR
+X => [[0,0],[0,1],[1,0],[1,1]]
+y => [0,1,1,1]
+red => perceptron(X, y, [2,3,1])
+ver "OR 0,0:", predecir(red, [0,0])
+ver "OR 1,0:", predecir(red, [1,0])
+ver "OR 1,1:", predecir(red, [1,1])

@@ -1,0 +1,10 @@
+# Red multicapa para XOR
+X => [[0,0],[0,1],[1,0],[1,1]]
+y => [0,1,1,0]
+
+red => perceptron(X, y, 4000)
+
+ver "XOR 0,0:", predecir(red, [0,0])
+ver "XOR 0,1:", predecir(red, [0,1])
+ver "XOR 1,0:", predecir(red, [1,0])
+ver "XOR 1,1:", predecir(red, [1,1])
